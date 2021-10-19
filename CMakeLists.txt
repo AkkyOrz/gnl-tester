@@ -6,7 +6,7 @@ add_compile_options(-Wall -Wextra -Werror)
 
 # GoogleTest requires at least C++11
 set(CMAKE_CXX_STANDARD 11)
-set(GNL_PATH ../../get_next_line)
+set(GNL_PATH ../)
 
 include(FetchContent)
 FetchContent_Declare(
