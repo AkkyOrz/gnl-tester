@@ -1,6 +1,6 @@
 # gnl-tester(2021+)
 
-**This is WIP project**
+This test is highly inspired by [Tripouille/gnlTester](https://github.com/Tripouille/gnlTester)
 
 This is a tester for the `gnl-tester` project of 42 school.
 Clone this tester in your `gnl-tester` repository.
@@ -19,15 +19,11 @@ And prepare `CMakeLists.txt` for every your repository you use.
 cd /path/to/gnl
 git clone https://github.com/AkkyOrz/gnl-tester.git
 cd gnl-tester
-cmake -S . -B build && cmake --build build && ./build/main
+cp gnl/CMakeLists.txt ../
+make
+# if you are using Linux
+make leaks
 ```
-
-## command
-
-```bash
-cmake -S . -B build && cmake --build build && ./build/main
-```
-
 
 ## CMake installation
 
@@ -43,17 +39,16 @@ cd cmake-3.21.2-macos-universal
 mv ./CMake.app ~
 echo "export PATH=$HOME/CMake.app/Contents/bin:$PATH" >> ~/.zshrc
 source ~/.zshrc
-`````
+```
 
 ### on macOS with MacPorts or brew
 
 ```bash
 sudo port install cmake
 brew install cmake
-`````
+```
 
 cmake is maybe installed in `/usr/loca/bin`
-
 
 ### on Ubuntu
 

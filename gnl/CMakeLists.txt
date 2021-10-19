@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.14)
+project(get_next_line)
+set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-Wall -Wextra -Werror -D BUFFER_SIZE=${BUFFER_SIZE})
+add_library(gnl STATIC get_next_line.c get_next_line_utils.c)
